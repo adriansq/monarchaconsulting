@@ -23,7 +23,7 @@ Monarcha Consulting website, built with React.js and Tailwind CSS, embodies mode
 
 and many more, including code architecture and reusability.
 
-###🚀 Installation
+### 🚀 Installation
 Follow these steps to set up the project locally on your machine.
 
 **Prerequisites**
