@@ -1,14 +1,14 @@
 # Monarcha Consulting
 
-###🚨 Introduction
+### 🚨 Introduction
 Monarcha Consulting website, built with React.js and Tailwind CSS, embodies modern UI/UX principles. The sleek design, smooth animations, and intuitive interface make it a prime example of crafting exceptional user experiences in web applications and websites.
 
-###⚙️ Tech Stack
+### ⚙️ Tech Stack
 - Vite
 - React.js
 - Tailwind CSS
 
-###🔋 Features
+### 🔋 Features
 👉 Beautiful Sections: Includes hero, expertise, services, footer and header.
 
 👉 Parallax Animations: Engaging effects triggered by mouse movement and scrolling.
