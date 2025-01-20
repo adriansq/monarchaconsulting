@@ -7,7 +7,7 @@ import Button from "./Button";
 
 const Services = () => {
   return (
-    <Section crosses className="overflow-hidden" id="services">
+    <Section crosses className="overflow-hidden opacity-0" id="services">
       <div className="container md:pb-10 pt-[0rem]">
         <Heading
           tag="What we can do for you"

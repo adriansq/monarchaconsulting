@@ -2,12 +2,13 @@ import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
 import { monarchaServices } from "../constants";
-import Generating from "./Generating";
 import { Gradient } from "./design/Hero";
+import Generating from "./Generating";
 
-const Features = () => {
+
+const Expertise = () => {
   return (
-    <Section crosses>
+    <Section crosses className="overflow-hidden opacity-0" id="expertise">
       <div className="container">
         <Heading
           tag="Why Monarcha"
@@ -44,6 +45,8 @@ const Features = () => {
                 ))}
               </ul>
             </div>
+
+            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
 
           </div>
 
@@ -97,4 +100,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Expertise;

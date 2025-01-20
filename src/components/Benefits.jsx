@@ -7,7 +7,7 @@ import ClipPath from "../assets/svg/ClipPath"
 
 const Benefits = () => {
   return (
-    <Section crosses id="expertise">
+    <Section crosses id="benefitss" className="opacity-0">
       <div className="container relative z-2 pt-[0rem]">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
@@ -19,23 +19,16 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-2 justify-center">
           {benefits.map((item) => (
             <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] border border-n-1/10 rounded-3xl"
+              className="block opacity-80 relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] rounded-3xl"
               key={item.id}
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,  
               }}
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
+              <div className="relative z-2 flex flex-col min-h-[11rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto justify-center">
-                  <img
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title}
-                  />
-                </div>
+         
               </div>
 
               {item.light && <GradientLight />}

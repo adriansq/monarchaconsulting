@@ -21,28 +21,28 @@ import {
 
 export const navigation = [
   {
-    id: "0",
+    id: "home",
     title: "Home",
     url: "#home",
   },
   {
-    id: "1",
+    id: "expertise",
     title: "Expertise",
     url: "#expertise",
   },
   {
-    id: "2",
+    id: "services",
     title: "Services",
     url: "#services",
   },
   {
-    id: "3",
+    id: "signin",
     title: "Sign in",
     url: "#signin",
     onlyMobile: true,
   },
   {
-    id: "4",
+    id: "contact",
     title: "Contact us",
     onlyMobile: true,
   },

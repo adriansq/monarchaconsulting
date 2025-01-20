@@ -43,8 +43,10 @@ export const BackgroundCircles = ({ parallaxRef }) => {
   }, []);
 
   return (
-    <div className="absolute -top-[42.375rem] left-1/2 w-[78rem] aspect-square border border-n-2/5 rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-[32rem]">
+    <div className="absolute mt-[15rem] flex justify-center left-1/2">
       <Rings />
+    <div className="fixed mt-[15rem] -top-[2.375rem] left-1/2 w-[78rem] aspect-square rounded-full -translate-x-1/2 md:-top-[38.5rem] xl:-top-[12rem]">
+      
 
       {/* Moving background colored circle balls */}
       <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
@@ -96,6 +98,7 @@ export const BackgroundCircles = ({ parallaxRef }) => {
           />
         </div>
       </MouseParallax>
+    </div>
     </div>
   );
 };
