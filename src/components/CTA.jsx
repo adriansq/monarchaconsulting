@@ -2,10 +2,8 @@ import { curve } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles } from "./design/Hero";
-import ContactModal from "./ContactForm";
-import PrivacyModal from "./PrivacyModal";
 
-function CTA({ toggleModal, isOpen, togglePrivacyModal, isPrivacyOpen }) {
+function CTA({ toggleModal }) {
 
   return (
     <div>
@@ -32,8 +30,7 @@ function CTA({ toggleModal, isOpen, togglePrivacyModal, isPrivacyOpen }) {
         </div>
       </div>
     </Section>
-     <ContactModal isOpen={isOpen} toggleModal={toggleModal} togglePrivacyModal={togglePrivacyModal} />
-     <PrivacyModal isPrivacyOpen={isPrivacyOpen} togglePrivacyModal={togglePrivacyModal} />
+
     </div>
   );
 }

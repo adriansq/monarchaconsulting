@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { navigation } from "../constants";  // Ensure navigation uses correct IDs
+import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
@@ -33,7 +33,7 @@ const Header = ({ toggleModal }) => {
       const section = document.getElementById(sectionId);
       if (section) {
         const rect = section.getBoundingClientRect();
-        // Check if the section is in the viewport (considering 50% visibility)
+        // Check if the section is in the viewport
         if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
           setActiveSection(sectionId); // Set the active section
         }
@@ -75,13 +75,13 @@ const Header = ({ toggleModal }) => {
             {navigation.map((item) => (
               <a
                 key={item.id}
-                href={item.url} // Use href with corresponding section ID
+                href={item.url}
                 onClick={handleClick}
                 className={`block relative font-code text-dash2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                   activeSection === item.id
-                    ? "z-2 lg:text-n-1" // Highlight active link
+                    ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
                 } lg:heading-5 lg:hover:text-n-1 xl:px-12`}
               >

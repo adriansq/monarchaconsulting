@@ -20,11 +20,11 @@ export default function ContactModal({ isOpen, toggleModal, togglePrivacyModal }
     if (isOpen) {
       // Show overlay and content
       setShouldRenderOverlay(true);
-      setTimeout(() => setShouldRenderContent(true), 150); // Delay to stagger the animations
+      setTimeout(() => setShouldRenderContent(true), 150);
     } else {
       // Hide content first, then overlay
       setShouldRenderContent(false);
-      setTimeout(() => setShouldRenderOverlay(false), 300); // Match the animation duration
+      setTimeout(() => setShouldRenderOverlay(false), 300);
     }
   }, [isOpen]);
 
